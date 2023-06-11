@@ -10,6 +10,7 @@
     "test": "node ./node_modules/.bin/jasmine",
     "test-watch": "watch 'clear ; node ./node_modules/.bin/jasmine' . --wait=2 --interval=1",
     "build": "./node_modules/.bin/webpack",
+    "build-watch": "watch 'clear ; npm run -s build' . --wait=2 --interval=1",
     "prepublishOnly": "NODE_ENV=production ./node_modules/.bin/webpack"
   },
   "repository": {
